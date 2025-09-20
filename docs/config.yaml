@@ -1,0 +1,45 @@
+# Example configuration file for XAI-guided adversarial attacks
+
+# Dataset settings
+data:
+  train_path: "data/processed/train.csv"
+  test_path: "data/processed/test.csv"
+  text_column: "text"
+  label_column: "label"
+  
+# Model settings
+models:
+  target_detector:
+    name: "transformer_detector"
+    model_path: "models/fake_news_detector"
+    max_length: 512
+    
+  llm_generator:
+    name: "gpt-3.5-turbo"
+    api_key: "${OPENAI_API_KEY}"
+    max_tokens: 150
+    temperature: 0.7
+
+# XAI settings
+xai:
+  explainer: "shap"
+  num_samples: 1000
+  top_k_features: 10
+
+# Attack settings
+attack:
+  method: "xai_guided"
+  max_iterations: 10
+  success_threshold: 0.8
+  
+# Evaluation settings
+evaluation:
+  metrics: ["attack_success_rate", "semantic_similarity", "fluency"]
+  save_results: true
+  output_dir: "data/results"
+
+# Logging
+logging:
+  level: "INFO"
+  save_logs: true
+  log_dir: "logs"
