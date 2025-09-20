@@ -15,12 +15,14 @@
 - **UNDERSTAND**: No dependencies to install
 - **REALIZE**: No build or test scripts exist
 - **KNOW**: No CI/CD workflows configured
+- **NOTE**: `.gitignore` excludes build artifacts like package-lock.json
 
 ### Repository Structure
 ```
 xsi-llms-attack/
 ├── .github/
 │   └── copilot-instructions.md  # This file
+├── .gitignore         # Excludes build artifacts
 ├── README.md          # Project title only
 └── .git/             # Git repository metadata
 ```
