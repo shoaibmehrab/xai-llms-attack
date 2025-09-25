@@ -1,0 +1,12 @@
+name: fake-news-defend
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - tensorflow=2.12
+  - numpy
+  - pandas
+  - nltk
+  - tqdm
+  - scikit-learn
+  - h5py

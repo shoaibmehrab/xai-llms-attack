@@ -1,0 +1,20 @@
+name: fake-news-bert
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.8  # drop if CPU-only
+  - transformers
+  - datasets
+  - shap
+  - scikit-learn
+  - pandas
+  - tqdm
+  - ipykernel
+  - pip
+  - pip:
+      - captum

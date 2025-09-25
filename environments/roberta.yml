@@ -1,0 +1,12 @@
+name: fake-news-roberta
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - transformers
+  - datasets
+  - torch
+  - pandas
+  - tqdm
+  - scikit-learn
+  - ipykernel
