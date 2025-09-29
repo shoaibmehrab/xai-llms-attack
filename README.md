@@ -13,7 +13,8 @@ This repository reproduces the SHAP-guided comment-attack pipeline. We:
 ## Requirements
 - Python 3.11 (match the BERT project; adjust if you target a different version).
 - CUDA-capable GPU recommended but optional.
-- Conda or mamba for the provided `environment.yml` (alternatively use `pip install -r requirements.txt`).
+- Conda or mamba for the provided `environment.yml` (alternatively use `pip install -r requirements.txt`) for common library.
+- Each model has different environment file provided under the `environments` folder with `name.yml` that need to be installed before each execution. 
 
 ```powershell
 # Windows + conda
